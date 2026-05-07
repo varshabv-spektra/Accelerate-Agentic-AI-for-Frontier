@@ -298,8 +298,6 @@ document and required Role permissions to it.
 
     ![image](./media/image58.png)
 
-    > Note: If the **Start Free Trial** option appears instead of **Get Started**, select Start Free Trial and then click **Skip** on the welcome screen of Copilot Studio.
-
 1. Enter the following agent description prompt in the prompt box to define your agent’s purpose and click Send.
 
     ```

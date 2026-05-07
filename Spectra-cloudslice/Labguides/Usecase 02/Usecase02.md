@@ -162,9 +162,35 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
 
 ## Task 4: Provision Services and deploy application to Azure
 
-1. Open the Windows search bar, search for **Docker Desktop** and click on the **Docker Desktop Application**. Once the application finishes loading and the Docker Engine is running, proceed to next step.
+1. In the LabVM search bar, type **Docker (1)** and select **Docker Desktop (2)** from the results to open the application.
 
-    ![](./media/image35(a).png)
+    ![](./media/uc9-14.png)
+
+    > **Note:** Before moving on to the next steps please make sure your Docker Desktop is up and running. It should not be in stopped state.
+
+1. Click **Accept** to agree to the Docker Subscription Service Agreement and continue.
+
+    ![](./media/uc8-23.png)
+
+1. Click **Skip** to bypass the setup questionnaire and proceed.
+
+    ![](./media/uc8-19.png)
+
+1. Click **Continue without signing in** to proceed without logging into Docker.
+
+    ![](./media/uc8-18.png)
+
+1. Select **Use recommended settings** and click **Finish** to complete the Docker Desktop setup.
+
+    ![](./media/uc8-24.png)  
+
+1. Click the **Close (X)** button to exit the Windows Subsystem for Linux (WSL) welcome screen.
+
+    ![](./media/uc8-17.png)
+
+1. Wait for Docker Desktop to finish starting the Docker Engine before proceeding.
+
+    ![](./media/uc8-16.png)     
 
 1. Navigate back to the Codespace and run the following command on the Terminal. It generates the code to copy. Copy the code and press Enter.
 
