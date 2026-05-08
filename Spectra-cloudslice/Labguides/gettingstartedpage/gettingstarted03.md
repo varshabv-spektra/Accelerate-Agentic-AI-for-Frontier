@@ -1,4 +1,4 @@
-# Hands-on Labs - Day 3
+# Hands - on Labs - Day 3
 
 # Trust, Security, and Control for Enterprise AI Agents
 
