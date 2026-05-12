@@ -181,7 +181,7 @@ incorrect.](./media/image28.png)
 
     - **Select an Azure Subscription to use** : Select your subscription
 
-    - **azureAiServiceLocation**: East US 2
+    - **azureAiServiceLocation**: East US 2, East US, West US , West US 3 , Sweden Central 
 
     >**Note** - If it throws quota issue try with other location
 
