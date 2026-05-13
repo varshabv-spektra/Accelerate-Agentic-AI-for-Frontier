@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lab, you will design, deploy, and govern an end-to-end agentic AI solution using Azure AI Foundry. Working through a realistic retail scenario, you will build Cora, an intelligent customer service assistant for Zava, a home improvement retailer, and apply enterprise-grade observability and safety practices across the full agent lifecycle. Rather than treating AI agents as black boxes, you will instrument them with tracing, Application Insights integration, and structured evaluation frameworks to gain complete visibility into agent behavior. You will run quality and safety evaluations using Azure AI's built-in evaluators, test models for fitness, and validate agent responses against real-world criteria. To harden the solution against adversarial risks, you will leverage Microsoft Foundry's AI Red Teaming capabilities to detect harmful outputs, security gaps, and jailbreak vulnerabilities before they reach production. By combining Azure AI Agent Service, Azure AI Search, multi-agent orchestration, and centralized governance through the Foundry Control Plane, you will build an AI system that is transparent, secure, scalable, and production-ready.
+In this lab, you will design, deploy, and govern an end-to-end agentic AI solution using Microsoft Foundry. Working through a realistic retail scenario, you will build Cora, an intelligent customer service assistant for Zava, a home improvement retailer, and apply enterprise-grade observability and safety practices across the full agent lifecycle. Rather than treating AI agents as black boxes, you will instrument them with tracing, Application Insights integration, and structured evaluation frameworks to gain complete visibility into agent behavior. You will run quality and safety evaluations using Azure AI's built-in evaluators, test models for fitness, and validate agent responses against real-world criteria. To harden the solution against adversarial risks, you will leverage Microsoft Foundry's AI Red Teaming capabilities to detect harmful outputs, security gaps, and jailbreak vulnerabilities before they reach production. By combining Azure AI Agent Service, Azure AI Search, multi-agent orchestration, and centralized governance through the Foundry Control Plane, you will build an AI system that is transparent, secure, scalable, and production-ready.
 
 ## Objective
 
@@ -14,21 +14,21 @@ By the end of this lab, participants will be able to:
 
    - Building an Intelligent Retail Assistant Using Azure AI Agent Service and Azure AI Search
 
-   - Orchestrating Multi-Agent Workflows with Azure AI Foundry Agent Framework
+   - Orchestrating Multi-Agent Workflows with Microsoft Foundry Agent Framework
 
-   - Evaluating AI Model Quality and Safety Using Azure AI Foundry Evaluation SDK
+   - Evaluating AI Model Quality and Safety Using Microsoft Foundry Evaluation SDK
 
-   - Implementing End-to-End Observability and Tracing with Application Insights and Azure AI Foundry
+   - Implementing End-to-End Observability and Tracing with Application Insights and Microsoft Foundry
 
    - Hardening AI Agents Against Adversarial Risks Using Microsoft Foundry AI Red Teaming
 
-   - Deploying and Governing Production-Ready AI Agents with Azure AI Foundry Control Plane
+   - Deploying and Governing Production-Ready AI Agents with Microsoft Foundry Control Plane
 
 ## Pre-requisites
 
 Participants should have:
 
-   - A working knowledge of Microsoft Azure services, including resource groups, Azure OpenAI, and Azure AI Foundry.
+   - A working knowledge of Microsoft Azure services, including resource groups, Azure OpenAI, and Microsoft Foundry.
 
    - Basic experience with Python, including running scripts, working with virtual environments, and using Jupyter notebooks.
 
@@ -44,7 +44,7 @@ Participants should have:
 
 ## Explanation of Components
 
-1. **Azure AI Foundry**: A unified platform for building, managing, and evaluating AI applications and agents on Azure. It provides tools for orchestration, model integration, monitoring, and governance across the AI lifecycle.
+1. **Microsoft Foundry**: A unified platform for building, managing, and evaluating AI applications and agents on Azure. It provides tools for orchestration, model integration, monitoring, and governance across the AI lifecycle.
 
 1. **Azure AI Agent Service**: A managed Azure service for creating AI-powered agents that can reason, use tools, retrieve data, and automate workflows. It simplifies deploying enterprise-grade conversational and autonomous AI experiences.
 
