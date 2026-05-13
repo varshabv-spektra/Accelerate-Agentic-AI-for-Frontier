@@ -579,10 +579,11 @@ contextual connections in your data.
 
      ![](./media/image100.png)
 
-     Choose the relationship type name as **Contains**, Source entity type as **Order** and Target entity type as **OrderItem**,then click on **Add relationship type**
+1. Choose the relationship type name as **Contains**, Source entity type as **Order** and Target entity type as **OrderItem**,then click on **Add relationship type**
+
      ![](./media/image101.png)
 
-     Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
+1. Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
      ![](./media/image102.png)
 
 
@@ -590,7 +591,7 @@ contextual connections in your data.
 
      ![](./media/image104.png)
 
-     Choose the relationship type name as **hasSupportTicket**,Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
+1. Choose the relationship type name as **hasSupportTicket**,Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
 
      ![](./media/image105.png)
 
@@ -598,7 +599,7 @@ contextual connections in your data.
 
      ![](./media/image108.png)
 
-     Choose the relationship type name as **hasTrackingEvent**, Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Create**
+1. Choose the relationship type name as **hasTrackingEvent**, Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Create**
 
      ![](./media/image109.png)
 
@@ -606,11 +607,11 @@ contextual connections in your data.
 
      ![](./media/image112.png)
 
-     Choose the relationship type name as **mayLeadTo**, Source entity type as **OrderItem** and Target entity type as **RefundClaim**,then click on **Add relationship type**
+1. Choose the relationship type name as **mayLeadTo**, Source entity type as **OrderItem** and Target entity type as **RefundClaim**,then click on **Add relationship type**
 
      ![](./media/image113.png)
 
-     Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **orderitems**, Source Column as **OrderItemID** and another Source Column as **UnitPrice**, then click on **Create**
+1. Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **orderitems**, Source Column as **OrderItemID** and another Source Column as **UnitPrice**, then click on **Create**
 
      ![](./media/image114.png)
 
