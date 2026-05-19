@@ -126,13 +126,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Explore Lab Resources](./media/envtab.png)
+![Explore Lab Resources](./media/gs1.1.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-![Use the Split Window Feature](./media/splittt.png)
+![Use the Split Window Feature](./media/gs1.2.png)
 
 ## Managing Your Virtual Machine
 
