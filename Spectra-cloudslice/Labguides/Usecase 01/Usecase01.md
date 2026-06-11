@@ -189,8 +189,15 @@ document and required Role permissions to it.
 
     ![image](./media/uc1-36.png)
 
+1. On the Create a project pop-up, keep all the details default and click on **Create**.
 
-1. Search for **text-embedding-3-large (1)**, select the model from the **list (2)**, and click **Confirm (3)** to proceed.
+1. On the Your project is set up pop-up, click on **Skip**.
+
+1. Click on **Discover** from the top menu.
+
+1. Select **Models (1)** from the left navigation pane, search for **text-embedding-3-large (2)**, select the model from the **list (3)**.
+
+1. Click on the **Deploy (1)** dropdown button and select **Custom settings (2)**.
 
 1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.      
 
@@ -206,10 +213,7 @@ document and required Role permissions to it.
 
 ## Exercise 4: Create a vector index
 
-1. In the Azure portal search bar, type **AI Search (1)**, then select **AI Search (2)** from the Services list to open it and click on the **searchleaves (3)**
-
-    ![image](./media/uc1-39(a).png)
-    ![image](./media/uc1-39(b).png)
+1. In the Azure portal search bar, type **AI Search (1)**, then select **AI Search (2)** from the Services list to open it and click on the **searchleaves (3)**.
 
 1. On the AI Search service page, click **Import data** to start importing data into the search index.
 
@@ -223,15 +227,15 @@ document and required Role permissions to it.
 
     ![image](./media/uc1-42.png)
 
-1. In the **Configure your Azure Blob Storage** step, select the **Storage account** **leavepolicystg<inject key="DeploymentID" enableCopy="false"/> (1)**, choose the **Blob container** as **document (2)**, and click **Next (3)** to proceed.
+1. In the **Configure your Azure Blob Storage** step, select * **leavepolicystg<inject key="DeploymentID" enableCopy="false"/> (1)** for the **Storage account**, choose the **Blob container** as **document (2)**, and click **Next (3)** to proceed.
 
     ![image](./media/uc1-43.png)
 
 1. In the **Vectorize your text** step, configure the following:
 
-    - Set **Kind** to **Azure OpenAI (1)**
+    - Set **Kind** to **Microsoft Foundry (1)**
     - Select your **Subscription (2)**
-    - Choose the **Azure OpenAI service** **openaiservice-<inject key="DeploymentID" enableCopy="false"/> (3)**
+    - Choose the **Microsoft Foundry Project (3)**
     - Set **Model deployment** to **text-embedding-3-large (4)**
     - Select **System assigned identity (5)** for authentication
     - Select the **"I acknowledge..."** checkbox
@@ -283,17 +287,15 @@ document and required Role permissions to it.
     You are a Knowledge assistant agent for HR who will answer questions related to leaves and leave policies to the employees.
     ```
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/cs2.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/cs2.png)
 
-1. Once the agent is created, in the Test pane, enter **How many days of Maternity leaves can I avail?** and click **Send.**
-
-1. Click on **Test (1)** from the top-right corner, then enter following **prompt (2)** to validate your agent’s response.
+1. Click on **Test (1)** from the top-right corner, then enter following **prompt (2)** and click send to validate your agent’s response.
 
     ```
     How many days of Maternity leaves can I avail?
     ```
 
-    ![image](./media/cs4.png)
+      ![image](./media/cs4.png)
 
 1. It gives a generalized response as shown in the screenshot below.
 
