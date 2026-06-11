@@ -200,7 +200,7 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
 
     ![](./media/image27.png)
 
-1. Run the azd auth login command, copy the displayed authentication code, and complete the sign-in process in your browser to authenticate your environment.
+1. Run the azd auth login command, copy the displayed authentication code, and click on **Enter**.
 
     ![](./media/image28.png)
 
@@ -216,10 +216,10 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
 
     ![](./media/image32.png)
 
-1. Run the az login command, copy the displayed authentication code, and complete the sign-in process in your browser to authenticate your environment.
+1. Run the az login command, copy the displayed authentication code, and complete the sign-in process in your browser to authenticate your environment by clicking on the link.
 
     ```
-    azd login
+    az login
     ```
 
     ![](./media/image33.png)
@@ -229,6 +229,8 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
     ![](./media/image30.png)
 
     ![](./media/image31(a).png)
+
+1. Type 1 for **Select a subscription or Tenant**.
 
     ![](./media/image35.png)
 
@@ -240,7 +242,7 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
 
     ![](./media/image36.png)
 
-1. Enter any name of your choice and press enter (eg:**prior-auth-devXXXX**)
+1. Enter any name of your choice and press enter (eg: **prior-auth-devXXXX**)
 
     ![](./media/image37.png)
 
@@ -248,9 +250,9 @@ To overcome these challenges, Contoso implements a **multi-agent AI system** whe
 
 1. Select below values.
 
-    - **Select an Azure Subscription to use** : Select your subscription
+    - **Select an Azure Subscription to use** : Press Enter to select your subscription
 
-    - **Enter a value for existingResourceGroup Name:** existing resource group
+    - **Enter a value for existingResourceGroup Name:** AgenticAI
 
     - **Enter location**: Sweden Central
 
