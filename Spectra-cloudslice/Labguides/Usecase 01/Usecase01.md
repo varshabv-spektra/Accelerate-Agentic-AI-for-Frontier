@@ -66,9 +66,13 @@ incorrect.](./media/uc1-4.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/uc1-5.png) 
 
-1. In the AI Search service, navigate to **Settings**, select **Keys**, and under **Manage admin keys**, click the **copy icon** next to the **Primary admin key** to copy it for later use.
+1. In the AI Search service, navigate to **Security + networking**, select **Keys (1)**, and under **Manage admin keys**, click the **copy icon (2)** next to the **Primary admin key** to copy it for later use.
 
-1. In the AI Search service, go to **Identity**, switch the **Status** to **On** to enable the system-assigned managed identity, and then click **Save** to apply the changes.
+    ![A](./media/f1.png) 
+
+1. In the AI Search service, go to **Identity**, switch the **Status** to **On (1)** to enable the system-assigned managed identity, and then click **Save (2)** to apply the changes.
+
+    ![A](./media/f2.png) 
 
 1. In the confirmation dialog to enable the system-assigned managed identity, click **Yes** to proceed and register the identity with Microsoft Entra ID.
 
@@ -191,15 +195,27 @@ document and required Role permissions to it.
 
 1. On the Create a project pop-up, keep all the details default and click on **Create**.
 
+    ![A](./media/f3.png) 
+
 1. On the Your project is set up pop-up, click on **Skip**.
+
+    ![A](./media/f4.png) 
 
 1. Click on **Discover** from the top menu.
 
+    ![A](./media/f5.png) 
+
 1. Select **Models (1)** from the left navigation pane, search for **text-embedding-3-large (2)**, select the model from the **list (3)**.
+
+    ![A](./media/f6.png) 
 
 1. Click on the **Deploy (1)** dropdown button and select **Custom settings (2)**.
 
+    ![A](./media/f7.png) 
+
 1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.      
+
+    ![A](./media/f8.png) 
 
    ### Congratulations!
 
@@ -241,7 +257,7 @@ document and required Role permissions to it.
     - Select the **"I acknowledge..."** checkbox
     - Click **Next (6)** to proceed
 
-      ![image](./media/uc1-44.png)
+         ![image](./media/f9.png)
 
 1. In the **Vectorize and enrich your images** step, leave the default options unchanged (no selection) and click **Next** to proceed.
 
