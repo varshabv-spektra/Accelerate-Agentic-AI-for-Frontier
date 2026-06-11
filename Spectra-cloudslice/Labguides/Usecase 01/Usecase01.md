@@ -359,6 +359,8 @@ document and required Role permissions to it.
 
    > **Note**: Please delete the resources that you have created in the **AgenticAI** resource group. 
 
+   ![](./media/f13.png) 
+
 ## Summary
 
 In this lab, we have learnt to connect the agent to a Azure AI Search
