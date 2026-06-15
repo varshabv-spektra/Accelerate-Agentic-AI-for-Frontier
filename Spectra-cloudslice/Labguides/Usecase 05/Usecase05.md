@@ -1,21 +1,12 @@
-## Use case 5 - Extracting Customer Insights from Conversations using Foundry IQ and AI agents
+# Use case 5 - Extracting Customer Insights from Conversations using Foundry IQ and AI agents
 
-**Introduction**
+## Introduction
 
-This usecase focuses on building an end-to-end AI-powered solution to
-extract meaningful customer insights from unstructured conversations and
-documents using Azure AI services and intelligent agents. Participants
-will deploy a complete cloud-based application using Azure Developer
-CLI, provision services such as Azure OpenAI, Cognitive Services, and
-Kubernetes, and integrate them into a scalable architecture.
+This usecase focuses on building an end-to-end AI-powered solution to extract meaningful customer insights from unstructured conversations and documents using Azure AI services and intelligent agents. Participants will deploy a complete cloud-based application using Azure Developer CLI, provision services such as Azure OpenAI, Cognitive Services, and Kubernetes, and integrate them into a scalable architecture.
 
-The solution demonstrates how organizations can analyze housing reports,
-contracts, and conversational data to uncover trends, compare insights,
-and support data-driven decision-making. It also introduces the use of
-Foundry AI agents for advanced document analysis, summarization, and
-contextual querying.
+The solution demonstrates how organizations can analyze housing reports, contracts, and conversational data to uncover trends, compare insights, and support data-driven decision-making. It also introduces the use of Foundry AI agents for advanced document analysis, summarization, and contextual querying.
 
-**Scenario**
+## Scenario
 
 In this usecase, you step into the role of a data analyst or AI engineer
 working for an organization dealing with large volumes of **customer
@@ -29,19 +20,15 @@ Azure Foundry and AI agents**. Your task is to design, deploy, and test
 this intelligent system that can automatically process documents,
 understand context, and generate meaningful insights.
 
-**Objectives**
+## Objectives
 
-- Understand and configure Azure resources including resource groups,
-  subscriptions, and service providers.
+- Understand and configure Azure resources including resource groups, subscriptions, and service providers.
 
-- Deploy an AI-driven application using Azure Developer CLI (azd) and
-  GitHub Codespaces.
+- Deploy an AI-driven application using Azure Developer CLI (azd) and GitHub Codespaces.
 
-- Provision and integrate services such as Azure OpenAI, Azure Cognitive
-  Services, AKS, and Cosmos DB.
+- Provision and integrate services such as Azure OpenAI, Azure Cognitive Services, AKS, and Cosmos DB.
 
-- Upload and process large volumes of documents for analysis (e.g.,
-  housing reports, contracts).
+- Upload and process large volumes of documents for analysis (e.g housing reports, contracts).
 
 - Use AI agents to:
 
@@ -51,18 +38,15 @@ understand context, and generate meaningful insights.
 
   - Analyze structured and unstructured data
 
-- Perform intelligent queries to generate summaries, tables, and
-  comparative analysis.
+- Perform intelligent queries to generate summaries, tables, and comparative analysis.
 
-- Validate deployment and test real-world use cases such as housing
-  affordability analysis and contract evaluation.
+- Validate deployment and test real-world use cases such as housing affordability analysis and contract evaluation.
 
-- Clean up resources after completion to optimize cost and resource
-  usage.
+- Clean up resources after completion to optimize cost and resource usage.
 
 ## Task 1: Register Service provider
 
-1.  Open a browser and login to Azure portal at <https://portal.azure.com/> with your credentials.
+1. Open a browser and login to Azure portal at <https://portal.azure.com/> with your credentials.
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
@@ -72,19 +56,19 @@ understand context, and generate meaningful insights.
 
       ![Enter Your Password](./media/gs2.png)
 
-2.  Click on **Subscriptions** tile.
+2. Click on **Subscriptions** tile.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image5.png)
 
-3.  Click on the subscription name.
+3. Click on the subscription name.
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/135.png)
 
-4.  Expand Settings from the left navigation menu. Click on **Resource
-    providers**, enter **Microsoft.CognitiveServices** and
-    select it, and then click **Register**.
+4. Expand Settings from the left navigation menu. Click on **Resource
+    providers**, enter **Microsoft.CognitiveServices** and
+    select it, and then click **Register**.
 
      ![](./media/image7.png)
 
@@ -92,38 +76,38 @@ incorrect.](./media/135.png)
 
      ![](./media/image9.png)
 
-5.  Repeat the steps \#4 to register the following Resource provider.
+5. Repeat the steps \#4 to register the following Resource provider.
 
     - **Microsoft.AlertsManagement**
 
 ## Task 2: Open Github Codespaces environment
 
-1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: 
+1. Open your browser, navigate to the address bar, type or paste the
+    following URL: 
 
     https://github.com/technofocus-pte/KnowledgeSolutionAccelerator.git
 
-2.  Click on **fork** to fork the repo. Give unique name to the repo and
-    click on **Create repo** button.
+2. Click on **fork** to fork the repo. Give unique name to the repo and
+    click on **Create repo** button.
 
     > **Note:** For this task, you are required to use your personal GitHub account.
 
      ![](./media/image13.png)
 
-3.  Click on **Create fork**
+3. Click on **Create fork**
 
-4.  Click on **Code -\> Codespaces -\> Codespaces+**
+4. Click on **Code -\> Codespaces -\> Codespaces+**
 
      ![](./media/image14.png)
 
      ![](./media/image15.png)
 
-5.  Wait for the Codespaces environment to setup .It takes few minutes
+5. Wait for the Codespaces environment to setup .It takes few minutes
     to setup completely
 
     ![](./media/image16.png)
 
-6.  Run the following command to install the Azure Developer CLI
+6. Run the following command to install the Azure Developer CLI
     (**azd**) on your codespace.
 
     ```
@@ -134,7 +118,7 @@ incorrect.](./media/135.png)
 
 ## Task 3: Provision Services and deploy application to Azure
 
-1.  Run the following command on the Terminal. It generates the code to
+1. Run the following command on the Terminal. It generates the code to
     copy. Copy the code and press Enter.
 
     ```
@@ -143,12 +127,12 @@ incorrect.](./media/135.png)
 
     ![](./media/image18.png)
 
-2.  Default browser opens to enter the generated code to verify. Enter
-    the code and click **Next**.
+2. Default browser opens to enter the generated code to verify. Enter
+    the code and click **Next**.
 
     ![](./media/image19.png)
 
-3.  Sign in with your Azure credentials.
+3. Sign in with your Azure credentials.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/imaget3s3.png)
 
@@ -159,20 +143,18 @@ incorrect.](./media/image21.png)
 
      ![](./media/image22.png)
 
-4.  To create an environment for Azure resources, run the following
-    Azure Developer CLI command.It asks you to enter environment name
-    .Enter any name of your choice and press enter (eg :agent1234)
-
-    > **Note:** When creating an environment, ensure that the name consists of
-lowercase letters.
+4. To create an environment for Azure resources, run the following Azure Developer CLI command.It asks you to enter environment name. 
 
     ```
     azd env new
     ```
+    - Enter a unique environment name: **agentxxxxxxx**
 
-    ![](./media/image23.png)
+      > **Note:** When creating an environment, ensure that the name consists of lowercase letters.    
 
-6.  Run azd up - This will provision Azure resources
+       ![](./media/image23.png)
+
+6. Run azd up - This will provision Azure resources
 
     ```
     azd up
@@ -180,11 +162,11 @@ lowercase letters.
 
     ![](./media/image25.png)
 
-7.  Select below values.
+7. Select below values.
 
-    - **Select an Azure Subscription to use** : Select your subscription
+    - **Select an Azure Subscription to use** : Select your subscription
 
-    - **azureAiServiceLocation**: Central US
+    - **azureAiServiceLocation**: Australia East, Central US
 
         ![](./media/image26.png)
 
@@ -192,22 +174,22 @@ lowercase letters.
 
 1. After selecting subscription and location please **Create a New resource group**.
 
-    - Resource Group Name : **agent-rg**
+    - Resource Group Name : Click **Enter**
 
-    - Location : **Central US**
+    - Location : **Australia East** if it fails try with **Central US**
 
-6.  This deployment will take *20-25 minutes* to provision the resources
+6. This deployment will take *20-25 minutes* to provision the resources
     in your account and set up the solution with sample data.
 
      ![](./media/image28.png)
 
      ![](./media/image29.png)
 
-7.  Now the deployment is complete
+7. Now the deployment is complete
 
      ![](./media/image30.png)
 
-8.  Run the following command to install PowerShell in Codespaces
+8. Run the following command to install PowerShell in Codespaces
 
     ```
     sudo apt-get update
@@ -219,7 +201,7 @@ lowercase letters.
 
     ![](./media/image32.png)
 
-9.  Run the following command to install PowerShell in Codespaces to
+9. Run the following command to install PowerShell in Codespaces to
     enable execution of PowerShell scripts within your development
     environment.
 
@@ -229,7 +211,7 @@ lowercase letters.
 
     ![](./media/image33.png)
 
-4.  Run the following command to log in to your Azure account and
+4. Run the following command to log in to your Azure account and
     authenticate your session.
 
     ```
@@ -311,17 +293,17 @@ lowercase letters.
 
 ## Task 4: Verify deployed resources in the Azure portal
 
-1.  Select **Resource groups**
+1. Select **Resource groups**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image50.png)
 
-2.  Click on your assigned Resource group **agent-rg**.
+2. Click on your assigned Resource group **agent-rg**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/139.png)
 
-3.  Make sure the below resource got deployed successfully
+3. Make sure the below resource got deployed successfully
 
     - Kubernetes service
 
@@ -341,11 +323,11 @@ incorrect.](./media/139.png)
 
        ![](./media/140.png)
 
-6.  Click on **Azure OpenAI.**
+6. Click on **Azure OpenAI.**
 
      ![](./media/141.png)
 
-7.  Click **Go to Foundry portal** to verify that the model has been
+7. Click **Go to Foundry portal** to verify that the model has been
     successfully deployed.
 
      ![](./media/image54.png)
@@ -354,26 +336,26 @@ incorrect.](./media/139.png)
 
 ## Task 5: Test the Application – Housing Affordability & Report Analysis
 
-1.  Return to the application to continue testing the Housing
+1. Return to the application to continue testing the Housing
     Affordability and Report Analysis features.
 
     ![](./media/image49.png)
 
-2.  Click on **Upload documents**
+2. Click on **Upload documents**
 
     ![](./media/image56.png)
 
-3.  Click on **Browse files**
+3. Click on **Browse files**
 
     ![](./media/image57.png)
 
-4.  Browse to **C:\LabFiles\lab file\Data** on your VM, then upload all the files by selecting and uploading **one file** at a time, and click on the **Open** button after each upload.
+4. Browse to **C:\LabFiles\lab file\Data** on your VM, then upload all the files by selecting and uploading **one file** at a time, and click on the **Open** button after each upload.
 
      ![](./media/image58.png)
 
 
 
-5.  Uploading the documents may take approximately 10–13 minutes to
+5. Uploading the documents may take approximately 10–13 minutes to
     complete.
 
      ![](./media/image59.png)
@@ -382,8 +364,8 @@ incorrect.](./media/139.png)
 
      ![](./media/image61.png)
 
-6.  Enter **What are the main factors contributing to the current
-    housing affordability issues?** and select **Send**.
+6. Enter **What are the main factors contributing to the current
+    housing affordability issues?** and select **Send**.
 
      ![](./media/image62.png)
 
@@ -393,98 +375,98 @@ incorrect.](./media/139.png)
 
 ## Task 6: Housing Report Search & Comparison
 
-1.  Search for: **"Housing Report"** to filter the document list
+1. Search for: **"Housing Report"** to filter the document list
 
-2.  Select **Annual Housing Report 2022** and **Annual Housing Report
+2. Select **Annual Housing Report 2022** and **Annual Housing Report
     2023**
 
-    - Confirm the top panel shows **"2 Selected"**
+    - Confirm the top panel shows **"2 Selected"**
 
        ![](./media/image65.png)
 
-3.  Enter  **Analyze the two annual reports and compare the positive
+3. Enter  **Analyze the two annual reports and compare the positive
     and negative outcomes YoY. Show the results in a table.** and
-    select **Send**.
+    select **Send**.
     ![](./media/image66.png)
 
     ![](./media/image67.png)
 
-4.  Click **DETAILS** on **Annual Housing Report 2023**
+4. Click **DETAILS** on **Annual Housing Report 2023**
 
      ![](./media/image68.png)
 
      ![](./media/image69.png)
 
-3.  Scroll to **pages 10 & 11.**
+3. Scroll to **pages 10 & 11.**
 
      ![](./media/image70.png)
 
-4.  Click on **Chat** tab in the pop-up viewer.
+4. Click on **Chat** tab in the pop-up viewer.
 
      ![](./media/image71.png)
 
-5.  Enter  **Can you summarize and compare the tables on page 10 and 11?** and select **Send**.
+5. Enter  **Can you summarize and compare the tables on page 10 and 11?** and select **Send**.
 
      ![](./media/image72.png)
 
-5.  Review the summarized comparison.
+5. Review the summarized comparison.
 
      ![](./media/image73.png)
-6.  Close the pop-up viewer
+6. Close the pop-up viewer
 
 ## Task 7: Contracts Search & Analysis
 
-1.  Search for: **"Contracts"** to filter the document list.
+1. Search for: **"Contracts"** to filter the document list.
 
-2.  Select **6 handwritten contract documents**.
+2. Select **6 handwritten contract documents**.
 
      ![](./media/image74.png)
 
-3.  Enter  **Analyze these forms and create a table with all buyers,
+3. Enter  **Analyze these forms and create a table with all buyers,
     sellers, and corresponding purchase prices.** and
-    select **Send**.
+    select **Send**.
 
      ![](./media/image75.png)
 
-4.  Review the table for correct buyer/seller names and purchase prices.
+4. Review the table for correct buyer/seller names and purchase prices.
 
      ![](./media/image76.png)
 
-5.  Click **DETAILS** on one of the handwritten contracts.
+5. Click **DETAILS** on one of the handwritten contracts.
 
      ![](./media/image77.png)
 
      ![](./media/image78.png)
 
-6.  Click on **Chat** tab in the pop-up viewer
+6. Click on **Chat** tab in the pop-up viewer
 
      ![](./media/image79.png)
 
-7.  Enter **What liabilities is the buyer responsible for within the
-    contract** and select **Send**.
+7. Enter **What liabilities is the buyer responsible for within the
+    contract** and select **Send**.
 
      ![](./media/image80.png)
 
-8.  Review the response for specific obligations (e.g., fees, taxes,
+8. Review the response for specific obligations (e.g., fees, taxes,
     maintenance, contingencies)
 
      ![](./media/image81.png)
 
 ## Task 8: Delete the resources
 
-1.  From the Azure portal home page, select the assigned Resource group.
+1. From the Azure portal home page, select the assigned Resource group.
     Select all the resources under the Resource group and select Delete.
 
      ![](./media/142.png)
 
      ![](./media/image83.png)
 
-2.  Enter **delete** and click on the **Delete** button to confirm
+2. Enter **delete** and click on the **Delete** button to confirm
     deletion. Click on **Delete** in the Delete confirmation dialog box.
 
      ![](./media/image84.png)
 
-3.  Confirm the deletion of all the resources with a success message.
+3. Confirm the deletion of all the resources with a success message.
 
 ## Summary
 

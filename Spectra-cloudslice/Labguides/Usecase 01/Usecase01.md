@@ -66,13 +66,13 @@ incorrect.](./media/uc1-4.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/uc1-5.png) 
 
-1. In the AI Search service, navigate to **Settings**, select **Keys**, and under **Manage admin keys**, click the **copy icon** next to the **Primary admin key** to copy it for later use.
+1. In the AI Search service, navigate to **Security + networking**, select **Keys (1)**, and under **Manage admin keys**, click the **copy icon (2)** next to the **Primary admin key** to copy it for later use.
 
-    ![image](./media/uc1-6.png)
+    ![A](./media/f1.png) 
 
-1. In the AI Search service, go to **Identity**, switch the **Status** to **On** to enable the system-assigned managed identity, and then click **Save** to apply the changes.
+1. In the AI Search service, go to **Identity (1)**, switch the **Status** to **On (2)** to enable the system-assigned managed identity, and then click **Save** to apply the changes.
 
-    ![image](./media/uc1-7.png)
+    ![A](./media/f2.png) 
 
 1. In the confirmation dialog to enable the system-assigned managed identity, click **Yes** to proceed and register the identity with Microsoft Entra ID.
 
@@ -120,11 +120,9 @@ incorrect.](./media/uc1-5.png)
 
     ![image](./media/uc1-16.png)
 
-1. In the **document** container, click **Upload (1)**, then in the upload pane select **Browse for files (2)**, choose the file you want to upload, and proceed with the upload.
+1. In the **document** container, click **Upload (1)**, then in the upload pane select **Browse for files (2)**, navigate to **C:\LabFiles\lab file**, select the **LeavePolicy.docx**  and then click on **Upload**..
 
     ![image](./media/uc1-17.png)
-
-1. Select the **LeavePolicy.docx** from **C:\LabFiles\lab file** and then click on **Upload**.
 
 1. In the storage account, navigate to **Access Control (IAM) (1)**, click **+ Add (2)**, and select **Add role assignment (3)** to begin assigning permissions.
 
@@ -141,10 +139,6 @@ incorrect.](./media/uc1-5.png)
 1. In the **Members** tab, select **Managed identity (1)**, click **Select members(2)**, choose **Search service (3)** from the managed identity dropdown, select your **AI Search service instance (4)**, and proceed to assign it.
 
     ![image](./media/uc1-22.png)
-
-1. In the **Select managed identities** pane, choose the **Search service** managed identity, select your AI Search service instance, and click **Select** to add it.
-
-    ![image](./media/uc1-23.png)
 
 1. In the **Add role assignment** pane, verify that both the required user and the **Search service managed identity** are listed under **Members (1)**, then click **Review + assign (2)** twice to complete the role assignment.
 
@@ -191,29 +185,37 @@ document and required Role permissions to it.
 
     ![image](./media/uc1-33.png)
 
-1. In the **Select managed identities** pane, confirm the selected **Search service** managed identity and click **Select** to add it.
-
-    ![image](./media/uc1-34.png)
-
 1. In the **Add role assignment** pane, verify that both the required user and the **Search service managed identity** are listed under **Members (1)**, then click **Review + assign (2)** twice to complete the role assignment.
 
     ![image](./media/uc1-35.png)
 
-1. On the Azure OpenAI resource **Overview** page, click **Go to Foundry portal** to open the service in Microsoft Foundry.
+1. Navigate to the **Overview** page, click **Go to Foundry portal** to open the service in Microsoft Foundry.
 
     ![image](./media/uc1-36.png)
 
-1. In the **Microsoft Foundry** portal, navigate to **Deployments (1)**, click **+ Deploy model (2)**, and select **Deploy base model (3)** to start deploying a model.
+1. On the Create a project pop-up, keep all the details default and click on **Create**.
 
-    ![image](./media/uc1-37.png)
+    ![A](./media/f3.png) 
 
-1. In the **Select a model** pane, search for **text-embedding-3-large (1)**, select the model from the **list (2)**, and click **Confirm (3)** to proceed.
+1. On the Your project is set up pop-up, click on **Skip**.
 
-    ![image](./media/uc1-38.png)
+    ![A](./media/f4.png) 
 
-1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.
+1. Click on **Discover** from the top menu.
 
-    ![image](./media/uc1-39.png)       
+    ![A](./media/f5.png) 
+
+1. Select **Models (1)** from the left navigation pane, search for **text-embedding-3-large (2)**, select the model from the **list (3)**.
+
+    ![A](./media/f6.png) 
+
+1. Click on the **Deploy (1)** dropdown button and select **Custom settings (2)**.
+
+    ![A](./media/f7.png) 
+
+1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.      
+
+    ![A](./media/f8.png) 
 
    ### Congratulations!
 
@@ -227,10 +229,7 @@ document and required Role permissions to it.
 
 ## Exercise 4: Create a vector index
 
-1. In the Azure portal search bar, type **AI Search (1)**, then select **AI Search (2)** from the Services list to open it and click on the **searchleaves (3)**
-
-    ![image](./media/uc1-39(a).png)
-    ![image](./media/uc1-39(b).png)
+1. In the Azure portal search bar, type **AI Search (1)**, then select **AI Search (2)** from the Services list to open it and click on the **searchleaves (3)**.
 
 1. On the AI Search service page, click **Import data** to start importing data into the search index.
 
@@ -244,21 +243,21 @@ document and required Role permissions to it.
 
     ![image](./media/uc1-42.png)
 
-1. In the **Configure your Azure Blob Storage** step, select the **Storage account** **leavepolicystg<inject key="DeploymentID" enableCopy="false"/> (1)**, choose the **Blob container** as **document (2)**, and click **Next (3)** to proceed.
+1. In the **Configure your Azure Blob Storage** step, select * **leavepolicystg<inject key="DeploymentID" enableCopy="false"/> (1)** for the **Storage account**, choose the **Blob container** as **document (2)**, and click **Next (3)** to proceed.
 
     ![image](./media/uc1-43.png)
 
 1. In the **Vectorize your text** step, configure the following:
 
-    - Set **Kind** to **Azure OpenAI (1)**
+    - Set **Kind** to **Microsoft Foundry (1)**
     - Select your **Subscription (2)**
-    - Choose the **Azure OpenAI service** **openaiservice-<inject key="DeploymentID" enableCopy="false"/> (3)**
+    - Choose the **Microsoft Foundry Project (3)**
     - Set **Model deployment** to **text-embedding-3-large (4)**
     - Select **System assigned identity (5)** for authentication
     - Select the **"I acknowledge..."** checkbox
     - Click **Next (6)** to proceed
 
-      ![image](./media/uc1-44.png)
+         ![image](./media/f9.png)
 
 1. In the **Vectorize and enrich your images** step, leave the default options unchanged (no selection) and click **Next** to proceed.
 
@@ -304,17 +303,15 @@ document and required Role permissions to it.
     You are a Knowledge assistant agent for HR who will answer questions related to leaves and leave policies to the employees.
     ```
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/cs2.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/cs2.png)
 
-1. Once the agent is created, in the Test pane, enter **How many days of Maternity leaves can I avail?** and click **Send.**
-
-1. Click on **Test (1)** from the top-right corner, then enter following **prompt (2)** to validate your agent’s response.
+1. Click on **Test (1)** from the top-right corner, then enter following **prompt (2)** and click send to validate your agent’s response.
 
     ```
     How many days of Maternity leaves can I avail?
     ```
 
-    ![image](./media/cs4.png)
+      ![image](./media/cs4.png)
 
 1. It gives a generalized response as shown in the screenshot below.
 
@@ -357,6 +354,12 @@ document and required Role permissions to it.
 1. You can see that the response from the agent now is from the document uploaded in the AI Search service.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/uc1-51.png)
+
+## Important
+
+   > **Note**: Please delete the resources that you have created in the **AgenticAI** resource group. 
+
+   ![](./media/f13.png) 
 
 ## Summary
 

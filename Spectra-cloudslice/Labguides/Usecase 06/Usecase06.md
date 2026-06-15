@@ -1,6 +1,6 @@
 # Use case 6 - Build an intelligent banking assistant with MCP tools and Microsoft Agent Framework
 
-**Introduction**
+## Introduction
 
 In modern banking, customers expect quick, intuitive, and personalized
 services without navigating complex applications. Traditional banking
@@ -18,7 +18,7 @@ transaction retrieval, and payment processing. An orchestrator
 coordinates these agents to deliver accurate, real-time responses,
 creating a seamless and efficient digital banking experience.
 
-**Objectives**
+## Objectives
 
 By implementing this use case, you will:
 
@@ -45,11 +45,9 @@ By implementing this use case, you will:
 - Deliver a **scalable and user-friendly conversational banking
   experience**
 
-
-
 ## Task 1: Register Service provider
 
-1.  Open a browser and login to Azure portal at <https://portal.azure.com/> with your credentials.
+1. Open a browser and login to Azure portal at <https://portal.azure.com/> with your credentials.
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
@@ -59,19 +57,19 @@ By implementing this use case, you will:
 
       ![Enter Your Password](./media/gs2.png)
 
-2.  Click on **Subscriptions** tile.
+2. Click on **Subscriptions** tile.
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image5.png)
 
-3.  Click on the subscription name.
+3. Click on the subscription name.
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/135.png)
 
-4.  Expand Settings from the left navigation menu. Click on **Resource
-    providers**, enter  **Microsoft.CognitiveServices** and
-    select it, and then click **Register**.
+4. Expand Settings from the left navigation menu. Click on **Resource
+    providers**, enter  **Microsoft.CognitiveServices** and
+    select it, and then click **Register**.
 
      ![](./media/143.png)
 
@@ -79,21 +77,23 @@ incorrect.](./media/135.png)
 
      ![](./media/image9.png)
 
-5.  Repeat the steps \#4 to register the following Resource provider.
+5. Repeat the steps \#4 to register the following Resource provider.
 
     - **Microsoft.AlertsManagement**
 
 ## Task 2: Open Github Codespaces environment
 
-1.  Open your browser, navigate to the address bar, type or paste the
-    following URL: 
+1. Open your browser, navigate to the address bar, type or paste the
+    following URL: 
 
+    ```
     https://github.com/technofocus-pte/Banking-assistant-Agent
+    ```
 
      ![](./media/image13.png)
 
-2.  Click on **fork** to fork the repo. Give unique name to the repo and
-    click on **Create repo** button.
+2. Click on **fork** to fork the repo. Give unique name to the repo and
+    click on **Create repo** button.
 
     > **Note:** For this task, you are required to use your personal GitHub account.
 
@@ -101,11 +101,11 @@ incorrect.](./media/135.png)
 
      ![](./media/image15.png)
 
-3.  Click on **Code -\> Codespaces -\> Codespaces+**
+3. Click on **Code -\> Codespaces -\> Codespaces+**
 
       ![](./media/image16.png)
 
-4.  Wait for the Codespaces environment to setup .It takes few minutes
+4. Wait for the Codespaces environment to setup .It takes few minutes
     to setup completely
 
      ![](./media/image17.png)
@@ -114,7 +114,7 @@ incorrect.](./media/135.png)
 
 ## Task 3: Provision Services and deploy application to Azure
 
-1.  Run the following command on the Terminal. It generates the code to
+1. Run the following command on the Terminal. It generates the code to
     copy. Copy the code and press Enter.
 
     ```
@@ -125,12 +125,12 @@ incorrect.](./media/135.png)
 
      ![](./media/image20.png)
 
-2.  Default browser opens to enter the generated code to verify. Enter
-    the code and click **Next**.
+2. Default browser opens to enter the generated code to verify. Enter
+    the code and click **Next**.
 
      ![](./media/image21.png)
 
-3.  Sign in with your Azure credentials.
+3. Sign in with your Azure credentials.
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image22.png)
@@ -140,7 +140,7 @@ incorrect.](./media/image23.png)
 
      ![](./media/image24.png)
 
-4.  To create an environment for Azure resources, run the following
+4. To create an environment for Azure resources, run the following
     Azure Developer CLI command.It asks you to enter environment name.
     Enter any name of your choice and press enter (eg
     :Bankagent1234)
@@ -151,7 +151,7 @@ incorrect.](./media/image23.png)
 
      ![](./media/image25.png)
 
-6.  Run azd up - This will provision Azure resources
+6. Run azd up - This will provision Azure resources
 
     ```
     azd up
@@ -159,9 +159,9 @@ incorrect.](./media/image23.png)
 
     ![](./media/image27.png)
 
-5.  Select below values.
+5. Select below values.
 
-     - **Select an Azure Subscription to use** : Select your subscription
+     - **Select an Azure Subscription to use** : Select your subscription
 
         ![](./media/image28.png)
 
@@ -174,7 +174,7 @@ incorrect.](./media/image23.png)
     - Resource Group Name : **newagent-rg**
 
     - Location : **Central US**
-6.  This deployment will take *7-10 minutes* to provision the resources
+6. This deployment will take *7-10 minutes* to provision the resources
     in your account and set up the solution with sample data.
 
      ![](./media/image30.png)
@@ -187,17 +187,17 @@ incorrect.](./media/image23.png)
 
      ![](./media/image34.png)
 
-7.  The service account endpoint has been completed successfully.
+7. The service account endpoint has been completed successfully.
 
      ![](./media/image35.png)
 
      ![](./media/image36.png)
 
-8.  The service backend has been completed successfully.
+8. The service backend has been completed successfully.
 
      ![](./media/image37.png)
 
-9.  The service payment has been completed successfully.
+9. The service payment has been completed successfully.
 
      ![](./media/image38.png)
 
@@ -211,20 +211,20 @@ incorrect.](./media/image23.png)
 
 ## Task 4: Verify deployed resources in the Azure portal
 
-1.  Select **Resource groups**
+1. Select **Resource groups**
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image41.png)
 
-2.  Click on your assigned Resource group **newagent-rg**.
+2. Click on your assigned Resource group **newagent-rg**.
 
-3.  Make sure all the resources got deployed successfully
+3. Make sure all the resources got deployed successfully
 
      ![](./media/image43.png)
 
      ![](./media/image44.png)
 
-3.  Make sure the below resource got deployed successfully
+3. Make sure the below resource got deployed successfully
 
      - Foundry
 
@@ -252,48 +252,48 @@ incorrect.](./media/image41.png)
 
        ![](./media/image45.png)
 
-4.  Select **Foundry project**
+4. Select **Foundry project**
 
      ![](./media/image46.png)
 
-6.  Click **Go to Foundry portal** to verify that the model has been
+6. Click **Go to Foundry portal** to verify that the model has been
     successfully deployed.
 
      ![](./media/image47.png)
 
-5.  In Microsoft Foundry, navigate to the **Build** section from the top
+5. In Microsoft Foundry, navigate to the **Build** section from the top
     menu to start creating and managing your AI solutions.
 
      ![](./media/image48.png)
 
 ## Task 5: Test the Application
 
-1.  Click on the generated **service web endpoint URL** to open and
+1. Click on the generated **service web endpoint URL** to open and
     access the deployed application in your browser.
 
      ![](./media/image49.png)
 
-2.  Click on **Open** button
+2. Click on **Open** button
 
      ![](./media/image50.png)
 
-3.  Click on **Start banking**
+3. Click on **Start banking**
 
      ![](./media/image51.png)
 
      ![](./media/image52.png)
 
-4.  On the Banking Assistant home page, select **Transaction Analysis**
+4. On the Banking Assistant home page, select **Transaction Analysis**
     to view and analyze transaction details.
 
      ![](./media/image53.png)
 
-5.  Select **Start Chat** to initiate a conversation with the Banking
+5. Select **Start Chat** to initiate a conversation with the Banking
     Assistant.
 
      ![](./media/image54.png)
 
-6.  Click **Review Card Spend** to analyze and review card transaction
+6. Click **Review Card Spend** to analyze and review card transaction
     spending details.
 
      ![](./media/image55.png)
@@ -306,19 +306,19 @@ incorrect.](./media/image41.png)
 
 ## Task 6: Delete the resources
 
-1.  From the Azure portal home page, select the assigned Resouce group **newagent-rg**
+1. From the Azure portal home page, select the assigned Resouce group **newagent-rg**
     Select all the resources under the Resource group and select Delete.
 
      ![A screenshot of a computer Description automatically
 generated](./media/144.png)
 
-2.  Enter **delete** and click on the **Delete** button to confirm
+2. Enter **delete** and click on the **Delete** button to confirm
     deletion. Click on **Delete** in the Delete confirmation dialog box.
 
      ![A screenshot of a computer Description automatically
 generated](./media/image60.png)
 
-3.  Confirm the deletion of all the resources with a success message.
+3. Confirm the deletion of all the resources with a success message.
 
      ![A screenshot of a computer screen Description automatically
 generated](./media/image61.png)

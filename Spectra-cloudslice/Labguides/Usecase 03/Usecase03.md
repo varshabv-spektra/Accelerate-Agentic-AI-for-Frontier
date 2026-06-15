@@ -272,7 +272,7 @@ incorrect.](./media/image45.png)
 
     ![](./media/image50.png)
 
-1. Go back to resourcegroup and click on **Foundry Project.**
+1. Go back to resource group and click on **Foundry Project.**
 
      ![](./media/image51.png)
 
@@ -280,9 +280,13 @@ incorrect.](./media/image45.png)
     
     ![](./media/image52.png)
 
-1. In the Foundry portal at the left click on **Models + endpoints** to see the **models** that have been deployed.
+1. Click on **Build** from the top menu.
 
-    ![](./media/image53.png)
+    ![](./media/f10.png)
+
+1. Click on **Deployments (1)** from the left navigation menu to see the **models (2)** that have been deployed.
+
+    ![](./media/f11.png)
 
    ### Congratulations!
 
@@ -312,7 +316,7 @@ incorrect.](./media/image45.png)
 
     ![](./media/image57(a).png)
 
-1. Select **client secret expiration** under App registration and click on **Add** button
+1. Select **Recommended : 180 days** for Client secret expiration and click on **Add** button.
 
     ![A screenshot of a computer AI-generated content may be
  incorrect.](./media/image58.png)
@@ -323,11 +327,11 @@ incorrect.](./media/image45.png)
 
     ![](./media/image60.png)
 
-1. On the web app home page, go to **Overview** and click **Browse**
+1. On the web app home page, go to **Overview** and click **Browse**.
 
     ![](./media/image61.png)
 
-1. Wait for the web application deployment to complete and click on **Accept**
+1. Wait for the web application deployment to complete and click on **Accept**.
 
     ![](./media/image62.png)
 
@@ -335,7 +339,7 @@ incorrect.](./media/image45.png)
 
 ## Task 7: Review and Explore the Sample Questions for Your Copilot Application
 
-1. Select the Team option from the top-left section and explore the different teams.
+1. Select the **RFP Team** option from the top-left section and explore the different teams.
 
     ![](./media/image64.png)
 
@@ -355,23 +359,23 @@ This process is powered by multiple AI agents working together to
 understand customer history, analyze sentiment, and recommend corrective
 actions.
 
-1. Select the Retail team, follow the prompts below.
-
+1. Select the Retail Customer Success Team and click on **Continue**.
+   
    **Agents Used:** Customer, Order, Analysis Recommendation
 
-   ![](./media/image67.png)
+     ![](./media/image67.png)
 
 1. In the **Multi-Agent Planner**, under *Quick tasks*, select ***Satisfaction Plan* to generate an analysis of Emily Thompson’s satisfaction with Contoso along with recommended actions to improve it.**
 
     ![](./media/image68.png)
 
-1. Click the **Submit** icon as shown in the image.
+1. Click on **Send**.
 
     ![](./media/image69.png)
 
     ![](./media/image70.png)
 
-1. Click **"Approve Task Plan"** Button
+1. Click **"Approve Task Plan"** Button.
 
     ![](./media/image71.png)
 
@@ -394,7 +398,7 @@ creation while ensuring alignment with product details and brand voice.
 
 1. Select the Marketing team, follow the prompts below. 
 
-    Click on **Contoso** at the left side.
+    Click on **Contoso** from the left side.
 
     ![](./media/image73.png)
 
